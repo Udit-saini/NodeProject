@@ -7,12 +7,12 @@ router.post('/',async(req,res)=>{
     try{
     const data=req.body;
     const newResponse=new Adhar(data);
-    await newResponse.save();
+    const response= await newResponse.save()
     console.log("data saved");
-    res.status(200).json("done")
+    res.status(200).json(response);
     }
     catch(err){
-        res.status(500).json({err:`internal error occur`})
+        res.status(500).json({err:`internnal error occur`})
     }
 })
 

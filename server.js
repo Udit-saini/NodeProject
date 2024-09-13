@@ -8,11 +8,11 @@ require('dotenv').config();
 
 
 const AdharRoutes=require('./routes/AdharRoutes')
-app.use('/Adhar',AdharRoutes)
+app.use('/adhar',AdharRoutes)
 app.listen(3001)
 
 const personRoutes = require('./routes/personRoutes');
-app.use('/Person',personRoutes);
+app.use('/person',personRoutes);
 app.listen(3000)
 
 
